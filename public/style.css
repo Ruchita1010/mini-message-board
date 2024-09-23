@@ -12,6 +12,7 @@
   --color-green: #04d939;
   --color-blue: #04d9d5;
   --color-purple: #6e04d9;
+  --color-red: #d90404;
 }
 
 body {
@@ -101,6 +102,11 @@ pre {
 
 .form-input input:focus {
   outline: 1px dashed var(--color-white);
+}
+
+.error-msg {
+  color: var(--color-red);
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
 }
 
 .btn {
