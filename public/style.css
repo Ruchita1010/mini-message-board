@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #0d0117;
+  --color-white: #e0fae7;
+  --color-pink: #d90476;
+  --color-yellow: #cbd904;
+  --color-green: #04d939;
+  --color-blue: #04d9d5;
+  --color-purple: #6e04d9;
+}
+
+body {
+  padding: clamp(1rem, 2vw, 2.5rem);
+  color: var(--color-white);
+  background-color: var(--color-bg);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3%;
+  text-align: start;
+}
+
+pre {
+  color: var(--color-pink);
+  font-size: max(0.6vw, 0.25rem);
+}
+
+.navlink {
+  color: var(--color-blue);
+  font-size: clamp(0.6rem, 2vw, 1.4rem);
+}
+
+.navlink:visited {
+  color: var(--color-yellow);
+}
+
+.messages {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmax;
+}
+
+.message {
+  color: var(--color-white);
+  font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+}
+
+.message-details {
+  color: var(--color-green);
+  font-weight: bold;
+}
+
+.date {
+  color: var(--color-purple);
+}
+
+.hyphen {
+  color: var(--color-yellow);
+  font-style: italic;
+  font-weight: 900;
+}
+
+/* For Message Form */
+.message-form {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+}
+
+.form-input label {
+  color: var(--color-green);
+}
+
+.form-input input {
+  width: 100%;
+  color: var(--color-white);
+  background-color: transparent;
+  font-size: clamp(0.6rem, 1.2vw, 1rem);
+  border: none;
+  border-bottom: 1px dashed var(--color-green);
+}
+
+.form-input input:focus {
+  outline: 1px dashed var(--color-white);
+}
+
+.btn {
+  padding: 0.5vmin;
+  background-color: var(--color-green);
+  font-weight: bold;
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  border: none;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('partials/header', {link}) %>
+    <form action="/new" method="POST" class="message-form">
+      <div class="form-input">
+        <label for="message">message:</label>
+        <input type="text" name="message" id="message" />
+      </div>
+      <div class="form-input">
+        <label for="username">username:</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </body>
+</html>
