@@ -36,7 +36,7 @@ pre {
 
 .navlink {
   color: var(--color-blue);
-  font-size: clamp(0.6rem, 2vw, 1.4rem);
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
 }
 
 .navlink:visited {
@@ -52,7 +52,7 @@ pre {
 
 .message {
   color: var(--color-white);
-  font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 .message-details {
@@ -84,7 +84,7 @@ pre {
   width: 100%;
   display: flex;
   align-items: center;
-  font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 .form-input label {
@@ -95,7 +95,7 @@ pre {
   width: 100%;
   color: var(--color-white);
   background-color: transparent;
-  font-size: clamp(0.6rem, 1.2vw, 1rem);
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
   border: none;
   border-bottom: 1px dashed var(--color-green);
 }
@@ -113,6 +113,6 @@ pre {
   padding: 0.5vmin;
   background-color: var(--color-green);
   font-weight: bold;
-  font-size: clamp(0.6rem, 1vw, 1rem);
+  font-size: clamp(0.8rem, 1vw, 1rem);
   border: none;
 }
