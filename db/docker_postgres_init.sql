@@ -1,0 +1,10 @@
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  username TEXT UNIQUE NOT NULL,
+  message TEXT NOT NULL,
+  created_on TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL,
+
+  CONSTRAINT username_regex CHECK(username ~ '^[\w.]+$'),
+  CONSTRAINT username_length CHECK(CHAR_LENGTH(username) >= 2 AND CHAR_LENGTH(username) <= 30),
+  CONSTRAINT message_length CHECK(CHAR_LENGTH(message) >= 2 AND CHAR_LENGTH(message) <= 500)
+);

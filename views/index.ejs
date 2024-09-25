@@ -12,8 +12,10 @@
       <% messages.forEach(message => { %>
       <div class="message">
         <p class="message-details">
-          @<%=message.username%>
-          <span class="date">&lt;<%=message.created_on%>&gt;</span>
+          @<%= message.username %>
+          <span class="date">
+            &lt;<%= message.created_on.toLocaleDateString() %>&gt;
+          </span>
         </p>
         <p><span class="hyphen">-</span> <%=message.message%></p>
       </div>
